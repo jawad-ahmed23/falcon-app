@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falcon Taxi</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./public/assets/logo.png" alt="logo" class="site-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex justify-content-center">
+              <button class="btn btn-book-taxi" type="submit">
+                Book a Taxi
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="small-bar">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 py-3 justify-content-center">
+            <div class="col text-start my-auto d-none d-md-block">
+              <div class="d-flex align-items-center gap-4 flex-wrap">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="/public/assets/mail.svg"
+                    alt=""
+                    class="contact-icon"
+                  />
+                  <a href="#" class="contact-text"
+                    >taxi+uber+sandbox@statestaxi.com</a
+                  >
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="/public/assets/phone.svg"
+                    alt=""
+                    class="contact-icon"
+                  />
+                  <a href="#" class="contact-text">+2 321 654 7898</a>
+                </div>
+              </div>
+            </div>
+            <div class="col text-end my-auto">
+              <div
+                class="d-flex align-items-center gap-4 justify-content-center justify-content-md-end flex-wrap"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="/public/assets/kogin.svg"
+                    alt=""
+                    class="contact-icon"
+                  />
+                  <a href="#" class="contact-text">Login</a>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="/public/assets/register.svg"
+                    alt=""
+                    class="contact-icon"
+                  />
+                  <a href="#" class="contact-text">Register</a>
+                </div>
+                <div class="align-items-center gap-2 d-none d-md-flex">
+                  <span class="contact-text">Follow Us:</span>
+                  <a href="#">
+                    <img
+                      src="/public/assets/faceboob.png"
+                      alt=""
+                      class="social-icon"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="/public/assets/twitter.png"
+                      alt=""
+                      class="social-icon"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="/public/assets/insta.png"
+                      alt=""
+                      class="social-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- hero-banner start -->
+    <div class="main-hero-banner">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 gy-3 gx-3">
+          <div
+            class="col my-auto"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <h4 class="banner-top-text text-center text-lg-start">
+              Travel Secure With Us!
+            </h4>
+            <h1 class="banner-center-text text-center text-lg-start">
+              Book Your
+              <span style="color: #2a448d">Airport Transfers</span> Today
+            </h1>
+            <p class="banner-bottom-text text-center text-lg-start">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley .
+            </p>
+          </div>
+          <div
+            class="col text-end"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <img src="./public/assets/hero-car.png" alt="" class="hero-car" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero-banner end -->
+    <!-- Form start -->
+    <div class="container">
+      <section
+        class="form-section py-5"
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      >
+        <div class="container">
+          <div class="form-fields-wraper">
+            <div class="form-tabs-wrapper mb-4">
+              <button class="one-way-btn active">One Way</button>
+              <button class="one-way-btn">One Way</button>
+            </div>
+            <div class="container px-0 px-md-5">
+              <form>
+                <div class="row row-cols-1 row-cols-md-2 gx-4 gy-4">
+                  <div class="col">
+                    <label for="" class="form-input-lable">Pick - up</label>
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        placeholder="Enter pickup location"
+                        class="form-fields"
+                      />
+                      <img
+                        src="./public/assets/location.svg"
+                        alt=""
+                        class="input-field-icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label for="" class="form-input-lable">Drop Off</label>
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        placeholder="Enter your drop-off"
+                        class="form-fields"
+                      />
+                      <img
+                        src="./public/assets/location.svg"
+                        alt=""
+                        class="input-field-icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label for="" class="form-input-lable">Luggage</label>
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        placeholder="Luggage"
+                        class="form-fields"
+                      />
+                      <img
+                        src="./public/assets/laguage.svg"
+                        alt=""
+                        class="input-field-icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="row row-cols-1 row-cols-md-2 gx-3 gy-4">
+                      <div class="col">
+                        <label for="" class="form-input-lable"
+                          >Pick Up Date</label
+                        >
+                        <div class="input-wrapper">
+                          <input
+                            type="text"
+                            placeholder="mm/dd/yyyy"
+                            class="form-fields"
+                          />
+                          <img
+                            src="./public/assets/calender.svg"
+                            alt=""
+                            class="input-field-icon"
+                          />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <label for="" class="form-input-lable">Time</label>
+                        <div class="input-wrapper">
+                          <input
+                            type="text"
+                            placeholder="00:00"
+                            class="form-fields"
+                          />
+                          <img
+                            src="./public/assets/time.svg"
+                            alt=""
+                            class="input-field-icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button class="submit-btn-form mt-5">
+                    Book Your Taxi
+                    <span class="ms-2">
+                      <img src="./public/assets/arrow.svg" alt="" />
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Form end -->
+    <!-- Advantages start -->
+    <section class="advantages-section my-5 py-5">
+      <div class="container">
+        <h4 class="section-sub-heading">MAIN FEATURES</h4>
+        <h2 class="section-heading mb-5">Our Advantages</h2>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-4 gy-4"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
+          <div class="col d-flex">
+            <div class="advan-card-wrapper">
+              <img src="./public/assets/c-img-1.png" alt="" class="crd-img" />
+              <h4 class="crd-heading text-center">Safety Guarantee</h4>
+              <p class="crd-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="advan-card-wrapper">
+              <img src="./public/assets/c-img-2.png" alt="" class="crd-img" />
+              <h4 class="crd-heading text-center">Fast Pickup</h4>
+              <p class="crd-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="advan-card-wrapper">
+              <img src="./public/assets/c-img-3.png" alt="" class="crd-img" />
+              <h4 class="crd-heading text-center">Affordable Rate</h4>
+              <p class="crd-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="advan-card-wrapper">
+              <img src="./public/assets/c-img-4.png" alt="" class="crd-img" />
+              <h4 class="crd-heading text-center">24/7 Support</h4>
+              <p class="crd-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Advantages end -->
+    <!-- About start -->
+    <section class="about-section mb-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 gy-4 gx-4">
+          <div
+            class="col my-auto order-2 order-lg-1 mt-4 mt-lg-auto"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <img
+              src="./public/assets/about-car.png"
+              alt=""
+              class="about-car-img"
+            />
+          </div>
+          <div
+            class="col order-1 order-lg-2 text-center text-lg-start"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <h4 class="about-sub-heading mb-2 text-center text-lg-start">
+              <span style="color: #2a448d">About</span> Our Company
+            </h4>
+            <h2 class="about-heading mb-2 text-center text-lg-start">
+              Feel the difference and Relaxation with Ridek Taxi Company!
+            </h2>
+            <p class="mb-2 about-text">
+              Text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book.Lorem Ipsum
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+            <button class="read-more mt-4">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+    <!-- Choose-us start -->
+
+    <section class="choose-section py-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 gy-4 gx-4">
+          <div
+            class="col"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <h4 class="choose-sub-heading mb-2 text-center text-lg-start">
+              WHY CHOOSE US
+            </h4>
+            <h2 class="choose-heading mb-2 text-center text-lg-start">
+              We Are Dedicated To Provide Quality Service
+            </h2>
+            <p class="mb-2 choose-text">
+              Text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book.Lorem Ipsum
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+            <img
+              src="./public/assets/choose-car.png"
+              alt=""
+              class="w-100 h-auto"
+            />
+          </div>
+          <div
+            class="col"
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <div class="row row-cols-1 gy-4 gx-4 flex-column">
+              <div class="col">
+                <div class="chosse-card d-flex align-items-center gap-3">
+                  <img
+                    src="./public/assets/choose-card-img-1.png"
+                    alt=""
+                    class="chosse-card-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="chose-crd-heading">Best Quality Taxi</h3>
+                    <p class="chose-crd-text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry. Lorem Ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="chosse-card d-flex align-items-center gap-3">
+                  <img
+                    src="./public/assets/choose-card-img-2.png"
+                    alt=""
+                    class="chosse-card-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="chose-crd-heading">Expert Drivers</h3>
+                    <p class="chose-crd-text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry. Lorem Ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="chosse-card d-flex align-items-center gap-3">
+                  <img
+                    src="./public/assets/choose-card-img-3.png"
+                    alt=""
+                    class="chosse-card-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h3 class="chose-crd-heading">Many Locations</h3>
+                    <p class="chose-crd-text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text.Lorem Ipsum is simply dummy text of
+                      the printing and typesetting industry. Lorem Ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choose-us end -->
+
+    <!-- CTA Start -->
+
+    <section class="cta-section py-5">
+      <div class="container">
+        <div class="row gy-4 gx-4">
+          <div
+            class="col-12 col-lg-8 text-center text-lg-start"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <h2 class="cta-heading text-center text-lg-start">
+              Book Your Cab It's Simple And Affordable
+            </h2>
+            <p class="cta-text text-center text-lg-start">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout point of
+              using is that it has normal distribution of letters.
+            </p>
+            <button
+              class="submit-btn-form mt-3"
+              style="background: white; color: #2a448d"
+            >
+              Book Now
+              <span class="ms-2">
+                <img src="./public/assets/blue-arrow.svg" alt="" />
+              </span>
+            </button>
+          </div>
+          <div class="col-12 col-lg-4">
+            <img src="./public/assets/cta-img.png" alt="" class="cta-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA End -->
+
+    <!-- footer start -->
+
+    <footer class="footer-section pt-5 pb-3">
+      <div class="container">
+        <div class="news-letter py-5 container">
+          <div class="mx-0 mx-lg-5">
+            <div class="row gx-4 gy-4 my-auto">
+              <div class="col-12 col-lg-8 my-auto">
+                <h3 class="newsletter-text text-center text-lg-start">
+                  Subscribe Newsletters
+                </h3>
+              </div>
+              <div class="col-12 col-lg-4 my-auto">
+                <div
+                  class="newsletter-input py-2 px-3 d-flex align-items-center justify-content-between"
+                >
+                  <input
+                    type="text"
+                    placeholder="Enter your email"
+                    class="news-field"
+                  />
+                  <button class="news-btn">Subscribe Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer-menu start -->
+        <div class="row row-cols-1 row-cols-lg-2 gy-1 gx-4 pt-4">
+          <div class="col text-center text-lg-start">
+            <ul
+              class="d-flex flex-wrap align-items-center gap-4 ps-0 justify-content-center justify-content-lg-start"
+            >
+              <li class="footer-menu">
+                <a href="#">About Us</a>
+              </li>
+              <li class="footer-menu">
+                <a href="#">Services</a>
+              </li>
+              <li class="footer-menu">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="footer-menu">
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col text-center text-lg-end">
+            <div
+              class="align-items-center gap-2 d-flex justify-content-center justify-content-lg-end"
+            >
+              <a href="#">
+                <img
+                  src="/public/assets/faceboob.png"
+                  alt=""
+                  class="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="/public/assets/twitter.png"
+                  alt=""
+                  class="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="/public/assets/insta.png"
+                  alt=""
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="w-100 justify-content-center d-none d-lg-flex">
+            <hr class="footer-line" />
+          </div>
+        </div>
+        <!-- footer-menu end -->
+        <div class="row row-cols-1 row-cols-lg-3 gy-1 gx-4 mt-3">
+          <div class="col text-center text-lg-start">
+            <p class="copyright-text">
+              © Copyright STATES TAXI. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col text-center d-none d-lg-block">
+            <img
+              src="./public/assets/footer-logo.png"
+              alt=""
+              class="footer-logo"
+            />
+          </div>
+          <div class="col text-center text-lg-end">
+            <p class="copyright-text">Designed & Developed by Wahab</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
